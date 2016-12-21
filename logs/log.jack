@@ -1,0 +1,1552 @@
+jackdmp 1.9.11
+Copyright 2001-2005 Paul Davis and others.
+Copyright 2004-2016 Grame.
+jackdmp comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; see the file COPYING for details
+JACK server starting in realtime mode with priority 70
+self-connect-mode is "Don't restrict self connect requests"
+Jack: JackPosixThread::StartImp : create non RT thread
+Jack: JackPosixThread::ThreadHandler : start
+Jack: playback device hw:USB
+Jack: capture device hw:USB
+Jack: apparent rate = 44100
+Jack: frames per period = 256
+Jack: JackDriver::Open capture_driver_name = hw:USB
+Jack: JackDriver::Open playback_driver_name = hw:USB
+Jack: Check protocol client = 8 server = 8
+Jack: JackEngine::ClientInternalOpen: name = system
+Jack: JackEngine::AllocateRefNum ref = 0
+Jack: JackPosixSemaphore::Allocate name = jack_sem.0_default_system val = 0
+Jack: JackEngine::NotifyAddClient: name = system
+Jack: JackGraphManager::SetBufferSize size = 256
+Jack: JackConnectionManager::DirectConnect first: ref1 = 0 ref2 = 0
+Jack: JackGraphManager::ConnectRefNum cur_index = 0 ref1 = 0 ref2 = 0
+Jack: JackDriver::SetupDriverSync driver sem in flush mode
+creating alsa driver ... hw:USB|hw:USB|256|3|44100|0|0|nomon|swmeter|soft-mode|32bit
+configuring for 44100Hz, period = 256 frames (5.8 ms), buffer = 3 periods
+ALSA: final selected sample format for capture: 32bit integer little-endian
+ALSA: use 3 periods for capture
+ALSA: final selected sample format for playback: 32bit integer little-endian
+ALSA: use 3 periods for playback
+Jack: JackSocketServerChannel::Open
+Jack: JackServerSocket::Bind : addr.sun_path /dev/shm/jack_default_0_0
+Jack: JackSocketServerChannel::BuildPoolTable size = 1
+Jack: JackEngine::Open
+Jack: JackClientSocket::Connect : addr.sun_path /dev/shm/jack_default_0_0
+Jack: JackEngine::ClientInternalOpen: name = freewheel
+Jack: JackEngine::AllocateRefNum ref = 1
+Jack: JackPosixSemaphore::Allocate name = jack_sem.0_default_freewheel val = 0
+Jack: JackEngine::NotifyAddClient: name = freewheel
+Jack: JackDriver::ClientNotify ref = 1 driver = system name = freewheel notify = 0
+Jack: JackDriver::ClientNotify ref = 0 driver = freewheel name = system notify = 0
+Jack: JackConnectionManager::DirectConnect first: ref1 = 1 ref2 = 1
+Jack: JackGraphManager::ConnectRefNum cur_index = 0 ref1 = 1 ref2 = 1
+Jack: JackDriver::SetupDriverSync driver sem in flush mode
+Jack: JackGraphManager::SetBufferSize size = 256
+Jack: JackAlsaDriver::Attach fBufferSize 256 fSampleRate 44100
+Jack: JackEngine::PortRegister ref = 0 name = system:capture_1 type = 32 bit float mono audio flags = 22 buffer_size = 256
+Jack: JackGraphManager::AllocatePortAux port_index = 1 name = system:capture_1 type = 32 bit float mono audio
+Jack: JackConnectionManager::AddOutputPort ref = 0 port = 1
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackAlsaDriver::Attach fCapturePortList[i] 1 
+Jack: JackEngine::PortRegister ref = 0 name = system:capture_2 type = 32 bit float mono audio flags = 22 buffer_size = 256
+Jack: JackGraphManager::AllocatePortAux port_index = 2 name = system:capture_2 type = 32 bit float mono audio
+Jack: JackConnectionManager::AddOutputPort ref = 0 port = 2
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackAlsaDriver::Attach fCapturePortList[i] 2 
+Jack: JackEngine::PortRegister ref = 0 name = system:playback_1 type = 32 bit float mono audio flags = 21 buffer_size = 256
+Jack: JackGraphManager::AllocatePortAux port_index = 3 name = system:playback_1 type = 32 bit float mono audio
+Jack: JackConnectionManager::AddInputPort ref = 0 port = 3
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackAlsaDriver::Attach fPlaybackPortList[i] 3 
+Jack: JackEngine::PortRegister ref = 0 name = system:playback_2 type = 32 bit float mono audio flags = 21 buffer_size = 256
+Jack: JackGraphManager::AllocatePortAux port_index = 4 name = system:playback_2 type = 32 bit float mono audio
+Jack: JackConnectionManager::AddInputPort ref = 0 port = 4
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackAlsaDriver::Attach fPlaybackPortList[i] 4 
+Jack: Clock source : system clock via clock_gettime
+Jack: JackServer::Start
+Jack: JackThreadedDriver::Start
+Jack: JackPosixThread::StartImp : create non RT thread
+Jack: JackPosixThread::ThreadHandler : start
+Jack: JackThreadedDriver::Init real-time
+Jack: JackPosixThread::AcquireRealTimeImp priority = 70
+Jack: JackPosixThread::StartImp : create non RT thread
+Jack: JackPosixThread::ThreadHandler : start
+Jack: JackSocketServerChannel::ClientCreate socket
+Jack: JackSocketServerChannel::BuildPoolTable size = 2
+Jack: JackSocketServerChannel::BuildPoolTable fSocketTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackRequest::Notification
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackEngine::ClientNotify: no callback for notification = 4
+Jack: JackEngine::ClientNotify: no callback for notification = 4
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::ClientCreate socket
+Jack: JackSocketServerChannel::BuildPoolTable size = 3
+Jack: JackSocketServerChannel::BuildPoolTable fSocketTable i = 1 fd = 8
+Jack: JackSocketServerChannel::BuildPoolTable fSocketTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : poll client error err = Success
+Jack: JackSocketServerChannel::ClientKill ref = -1 fd = 9
+Jack: Client was not opened : probably correspond to server_check
+Jack: JackClientSocket::Close
+Jack: JackSocketServerChannel::BuildPoolTable size = 2
+Jack: JackSocketServerChannel::BuildPoolTable fSocketTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::ClientCreate socket
+Jack: JackSocketServerChannel::BuildPoolTable size = 3
+Jack: JackSocketServerChannel::BuildPoolTable fSocketTable i = 1 fd = 8
+Jack: JackSocketServerChannel::BuildPoolTable fSocketTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackRequest::ClientCheck
+Jack: Check protocol client = 8 server = 8
+Jack: JackRequest::ClientOpen
+Jack: JackEngine::ClientExternalOpen: uuid = 0, name = SuperCollider
+Jack: JackEngine::AllocateRefNum ref = 2
+Jack: JackPosixSemaphore::Allocate name = jack_sem.0_default_SuperCollider val = 0
+Jack: JackSocketNotifyChannel::Open name = SuperCollider
+Jack: JackClientSocket::Connect : addr.sun_path /dev/shm/jack_SuperCollider_0_0
+Jack: JackShmMem::new index = 2 attached = 76f1f000 size = 432 
+Jack: JackExternalClient::Open name = SuperCollider index = 2 base = 76f1f000
+Jack: JackPosixProcessSync::TimedWait time out = 5000000
+Jack: JackPosixProcessSync::TimedWait finished delta = 4617.0
+Jack: JackEngine::NotifyAddClient: name = SuperCollider
+Jack: JackDriver::ClientNotify ref = 2 driver = system name = SuperCollider notify = 0
+Jack: JackExternalClient::ClientNotify ref = 0 client = SuperCollider name = system notify = 0
+Jack: JackDriver::ClientNotify ref = 2 driver = freewheel name = SuperCollider notify = 0
+Jack: JackExternalClient::ClientNotify ref = 1 client = SuperCollider name = freewheel notify = 0
+Jack: JackSocketServerChannel::ClientAdd ref = 2 fd = 9
+Jack: JackSocketServerChannel::BuildPoolTable size = 3
+Jack: JackSocketServerChannel::BuildPoolTable fSocketTable i = 1 fd = 8
+Jack: JackSocketServerChannel::BuildPoolTable fSocketTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackRequest::Notification
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackEngine::ClientNotify: no callback for notification = 4
+Jack: JackEngine::ClientNotify: no callback for notification = 4
+Jack: JackEngine::ClientNotify: no callback for notification = 4
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackRequest::RegisterPort
+Jack: JackEngine::PortRegister ref = 2 name = SuperCollider:in_1 type = 32 bit float mono audio flags = 1 buffer_size = 0
+Jack: JackGraphManager::AllocatePortAux port_index = 5 name = SuperCollider:in_1 type = 32 bit float mono audio
+Jack: JackConnectionManager::AddInputPort ref = 2 port = 5
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackRequest::RegisterPort
+Jack: JackEngine::PortRegister ref = 2 name = SuperCollider:in_2 type = 32 bit float mono audio flags = 1 buffer_size = 0
+Jack: JackGraphManager::AllocatePortAux port_index = 6 name = SuperCollider:in_2 type = 32 bit float mono audio
+Jack: JackConnectionManager::AddInputPort ref = 2 port = 6
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackRequest::RegisterPort
+Jack: JackEngine::PortRegister ref = 2 name = SuperCollider:out_1 type = 32 bit float mono audio flags = 2 buffer_size = 0
+Jack: JackGraphManager::AllocatePortAux port_index = 7 name = SuperCollider:out_1 type = 32 bit float mono audio
+Jack: JackConnectionManager::AddOutputPort ref = 2 port = 7
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackRequest::RegisterPort
+Jack: JackEngine::PortRegister ref = 2 name = SuperCollider:out_2 type = 32 bit float mono audio flags = 2 buffer_size = 0
+Jack: JackGraphManager::AllocatePortAux port_index = 8 name = SuperCollider:out_2 type = 32 bit float mono audio
+Jack: JackConnectionManager::AddOutputPort ref = 2 port = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackRequest::Notification
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackEngine::ClientNotify: no callback for notification = 4
+Jack: JackEngine::ClientNotify: no callback for notification = 4
+Jack: JackExternalClient::ClientNotify ref = 2 client = SuperCollider name = SuperCollider notify = 4
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackRequest::ActivateClient
+Jack: JackEngine::ClientActivate ref = 2 name = SuperCollider
+Jack: JackConnectionManager::DirectConnect first: ref1 = 1 ref2 = 2
+Jack: JackGraphManager::ConnectRefNum cur_index = 3 ref1 = 1 ref2 = 2
+Jack: JackConnectionManager::DirectConnect first: ref1 = 2 ref2 = 1
+Jack: JackGraphManager::ConnectRefNum cur_index = 3 ref1 = 2 ref2 = 1
+Jack: JackPosixProcessSync::TimedWait time out = 20000000
+Jack: JackPosixProcessSync::TimedWait finished delta = 4920.0
+Jack: JackExternalClient::ClientNotify ref = 2 client = SuperCollider name = SuperCollider notify = 2
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackEngine::ClientNotify: no callback for notification = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackRequest::Notification
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackExternalClient::ClientNotify ref = 2 client = SuperCollider name = SuperCollider notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackExternalClient::ClientNotify ref = 2 client = SuperCollider name = SuperCollider notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackEngine::ClientNotify: no callback for notification = 4
+Jack: JackEngine::ClientNotify: no callback for notification = 4
+Jack: JackExternalClient::ClientNotify ref = 2 client = SuperCollider name = SuperCollider notify = 4
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackRequest::ConnectNamePorts
+Jack: JackEngine::PortConnect ref = 2 src = system:capture_1 dst = SuperCollider:in_1
+Jack: JackGraphManager::CheckConnect src_name = system:capture_1 dst_name = SuperCollider:in_1
+Jack: JackEngine::PortConnect ref = 2 src = 1 dst = 5
+Jack: JackGraphManager::Connect port_src = 1 port_dst = 5
+Jack: JackConnectionManager::Connect port_src = 1 port_dst = 5
+Jack: JackConnectionManager::Connect port_src = 5 port_dst = 1
+Jack: JackConnectionManager::IsLoopPathAux ref1 = 2 ref2 = 0
+Jack: JackConnectionManager::DirectConnect first: ref1 = 0 ref2 = 2
+Jack: JackConnectionManager::IncConnectionRef: ref1 = 0 ref2 = 2
+Jack: JackEngine::ClientNotify: no callback for notification = 11
+Jack: JackEngine::ClientNotify: no callback for notification = 11
+Jack: JackEngine::ClientNotify: no callback for notification = 11
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackRequest::ConnectNamePorts
+Jack: JackEngine::PortConnect ref = 2 src = system:capture_2 dst = SuperCollider:in_2
+Jack: JackGraphManager::CheckConnect src_name = system:capture_2 dst_name = SuperCollider:in_2
+Jack: JackEngine::PortConnect ref = 2 src = 2 dst = 6
+Jack: JackGraphManager::Connect port_src = 2 port_dst = 6
+Jack: JackConnectionManager::Connect port_src = 2 port_dst = 6
+Jack: JackConnectionManager::Connect port_src = 6 port_dst = 2
+Jack: JackConnectionManager::IsLoopPathAux ref1 = 2 ref2 = 0
+Jack: JackConnectionManager::IncConnectionRef: ref1 = 0 ref2 = 2
+Jack: JackEngine::ClientNotify: no callback for notification = 11
+Jack: JackEngine::ClientNotify: no callback for notification = 11
+Jack: JackEngine::ClientNotify: no callback for notification = 11
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackRequest::ConnectNamePorts
+Jack: JackEngine::PortConnect ref = 2 src = SuperCollider:out_1 dst = system:playback_1
+Jack: JackGraphManager::CheckConnect src_name = SuperCollider:out_1 dst_name = system:playback_1
+Jack: JackEngine::PortConnect ref = 2 src = 7 dst = 3
+Jack: JackGraphManager::Connect port_src = 7 port_dst = 3
+Jack: JackConnectionManager::Connect port_src = 7 port_dst = 3
+Jack: JackConnectionManager::Connect port_src = 3 port_dst = 7
+Jack: JackConnectionManager::IsLoopPathAux ref1 = 0 ref2 = 2
+Jack: JackConnectionManager::DirectConnect first: ref1 = 2 ref2 = 0
+Jack: JackConnectionManager::IncConnectionRef: ref1 = 2 ref2 = 0
+Jack: JackEngine::ClientNotify: no callback for notification = 11
+Jack: JackEngine::ClientNotify: no callback for notification = 11
+Jack: JackEngine::ClientNotify: no callback for notification = 11
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackRequest::Notification
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackExternalClient::ClientNotify ref = 2 client = SuperCollider name = SuperCollider notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackExternalClient::ClientNotify ref = 2 client = SuperCollider name = SuperCollider notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackEngine::ClientNotify: no callback for notification = 4
+Jack: JackEngine::ClientNotify: no callback for notification = 4
+Jack: JackExternalClient::ClientNotify ref = 2 client = SuperCollider name = SuperCollider notify = 4
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackRequest::ConnectNamePorts
+Jack: JackEngine::PortConnect ref = 2 src = SuperCollider:out_2 dst = system:playback_2
+Jack: JackGraphManager::CheckConnect src_name = SuperCollider:out_2 dst_name = system:playback_2
+Jack: JackEngine::PortConnect ref = 2 src = 8 dst = 4
+Jack: JackGraphManager::Connect port_src = 8 port_dst = 4
+Jack: JackConnectionManager::Connect port_src = 8 port_dst = 4
+Jack: JackConnectionManager::Connect port_src = 4 port_dst = 8
+Jack: JackConnectionManager::IsLoopPathAux ref1 = 0 ref2 = 2
+Jack: JackConnectionManager::IncConnectionRef: ref1 = 2 ref2 = 0
+Jack: JackEngine::ClientNotify: no callback for notification = 11
+Jack: JackEngine::ClientNotify: no callback for notification = 11
+Jack: JackEngine::ClientNotify: no callback for notification = 11
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackRequest::Notification
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackExternalClient::ClientNotify ref = 2 client = SuperCollider name = SuperCollider notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackExternalClient::ClientNotify ref = 2 client = SuperCollider name = SuperCollider notify = 18
+Jack: JackDriver::ClientNotify ref = 1 driver = freewheel name = freewheel notify = 18
+Jack: JackEngine::ClientNotify: no callback for notification = 4
+Jack: JackEngine::ClientNotify: no callback for notification = 4
+Jack: JackExternalClient::ClientNotify ref = 2 client = SuperCollider name = SuperCollider notify = 4
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 5867
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackRequest::Notification
+Jack: JackEngine::ClientNotify: no callback for notification = 3
+Jack: JackEngine::ClientNotify: no callback for notification = 3
+Jack: JackExternalClient::ClientNotify ref = 2 client = SuperCollider name = SuperCollider notify = 3
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 11677
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 17503
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 23206
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 28942
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 34819
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 40582
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 46515
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 52200
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 58072
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 63809
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 69576
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 75448
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 81184
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 87061
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 92850
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 98691
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 104451
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 110191
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 116068
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 121814
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 127689
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 133463
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 139320
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 145074
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 150958
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 156700
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 162461
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 168326
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 174079
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 179950
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 185706
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 191592
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 197335
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 203094
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 208953
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 214714
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 220592
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 226337
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 232207
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 237957
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 243714
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 249624
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 255344
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 261210
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 266964
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 272853
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 278628
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 284485
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 290217
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 295966
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 301838
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 307632
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 313498
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 319220
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 325098
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 330844
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 336636
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 342493
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 348222
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 354100
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 359846
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 365728
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 371497
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 377233
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 383134
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 388856
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 394731
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 400501
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 406393
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 412104
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 417984
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 423737
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 429508
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 435364
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 441109
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 446991
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 452761
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 458623
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 464369
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 470116
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 475992
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 481743
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 487656
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 493402
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 499244
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 504996
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 510754
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 516659
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 522383
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 528247
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 533999
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 539877
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 545665
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 551387
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 557254
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 563014
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 568873
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 574670
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 580515
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 586253
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 592128
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 597875
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 603672
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 609526
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 615258
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 621135
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 626889
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 632798
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 638537
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 644265
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 650153
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 655897
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 661765
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 667532
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 673408
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 679145
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 684898
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 690782
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 696541
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 702422
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 708148
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 714022
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 719777
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 725689
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 731408
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 737158
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 743045
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 748785
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 754664
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 760413
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 766285
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 772027
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 777785
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 783671
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 789409
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 795285
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 801037
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 806915
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 812696
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 818414
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 824290
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 830040
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 835915
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 841705
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 847553
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 853301
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 859172
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 864920
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 870710
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 876566
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 882295
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 888173
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 893924
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 899800
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 905567
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 911302
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 917178
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 922933
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 928801
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 934583
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 940433
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 946181
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 951928
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 957812
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 963577
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 969436
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 975182
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 981059
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 986815
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 992739
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 998460
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1004189
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1010063
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1015817
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1021723
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1027445
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1033325
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1039065
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1044823
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1050707
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1056447
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1062320
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1068072
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1073949
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1079710
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1085451
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1091324
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1097080
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1102956
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1108741
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1114587
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1120330
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1126208
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1131955
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1137747
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1143590
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1149338
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1155211
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1160961
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1166842
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1172597
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1178347
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1184214
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1189958
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1195836
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1201622
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1207467
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1213221
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1218961
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1224842
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1230612
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1236470
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1242213
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1248095
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1253846
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1259756
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1265475
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1271220
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1277094
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1282863
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1288755
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1294503
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1300360
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1306101
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1311855
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1317768
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1323489
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1329354
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1335111
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1340983
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1346773
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1352489
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1358363
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1364112
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1369981
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1375748
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1381621
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1387390
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1393252
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1398989
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1404786
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1410631
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1416386
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1422244
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1427995
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1433870
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1439627
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1445383
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1451248
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1456998
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1462899
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1468641
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1474505
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1480247
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1486002
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1491889
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1497644
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1503508
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1509251
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1515129
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1520883
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1526769
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1532509
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1538258
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1544130
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1549888
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1555770
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1561512
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1567397
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1573146
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1578890
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1584776
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1590539
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1596401
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1602138
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1608024
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1613808
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1619515
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1625402
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1631146
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1637018
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1642850
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1648671
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1654410
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1660274
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1666024
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1671787
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1677665
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1683413
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1689279
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1695028
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1700904
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1706675
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1712403
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1718281
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1724035
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1729906
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1735666
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1741543
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1747283
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1753041
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1758931
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1764681
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1770542
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1776288
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1782164
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1787916
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1793830
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1799545
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1805296
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1811167
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1816929
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1822871
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1828550
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1834423
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1840170
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1845927
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1851813
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1857553
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1863428
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1869175
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1875057
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1880839
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1886577
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1892429
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1898181
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1904056
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1909844
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1915692
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1921434
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1927307
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1933061
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1938849
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1944699
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1950438
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1956317
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1962065
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1967946
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1973713
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1979451
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1985320
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1991069
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 1996946
+Jack: Process: graph not finished!
+Jack: Process: switch to next state delta = 2002761
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackRequest::Notification
+Jack: JackEngine::ClientNotify: no callback for notification = 3
+Jack: JackEngine::ClientNotify: no callback for notification = 3
+Jack: JackExternalClient::ClientNotify ref = 2 client = SuperCollider name = SuperCollider notify = 3
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 5806
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackRequest::Notification
+Jack: JackEngine::ClientNotify: no callback for notification = 3
+Jack: JackEngine::ClientNotify: no callback for notification = 3
+Jack: JackExternalClient::ClientNotify ref = 2 client = SuperCollider name = SuperCollider notify = 3
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 11590
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 17318
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 23190
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 28950
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 34819
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 40567
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 46439
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 52201
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 58077
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 63825
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 69569
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 75442
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 81201
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 87107
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 92826
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 98699
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 104444
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 110204
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 116112
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 121831
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 127704
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 133453
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 139334
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 145132
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 150834
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 156706
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 162457
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 168331
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 174102
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 180034
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 185720
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 191595
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 197337
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 203130
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 208971
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 214718
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 220632
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 226355
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 232226
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 237988
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 243724
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 249600
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 255349
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 261222
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 266991
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 272858
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 278606
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 284357
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 290230
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 295988
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 301857
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 307605
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 313486
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 319238
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 325150
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 330872
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 336607
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 342487
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 348249
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 354146
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 359863
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 365739
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 371489
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 377243
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 383168
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 388873
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 394742
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 400490
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 406368
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 412132
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 417868
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 423744
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 429493
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 435369
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 441161
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 447012
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 452748
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 458632
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 464372
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 470172
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 476024
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 481757
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 487635
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 493374
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 499255
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 505016
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 510760
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 516636
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 522389
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 528257
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 534027
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 539906
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 545643
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 551382
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 557260
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 563026
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 568890
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 574641
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 580521
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 586266
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 592157
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 597893
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 603643
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 609519
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 615271
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 621157
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 626897
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 632773
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 638521
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 644291
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 650252
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 655936
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 661806
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 667559
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 673408
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 679192
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 684908
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 690784
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 696530
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 702406
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 708198
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 714044
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 719786
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 725660
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 731409
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 737197
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 743056
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 748786
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 754664
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 760415
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 766296
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 772068
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 777790
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 783669
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 789416
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 795291
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 801058
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 806921
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 812674
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 818422
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 824302
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 830098
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 835950
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 841679
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 847550
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 853307
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 859070
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 864933
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 870680
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 876558
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 882310
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 888192
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 893940
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 899812
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 905558
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 911315
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 917257
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 922941
+Jack: Process: graph not finished!
+Jack: Process: waiting to switch delta = 928933
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
+Jack: JackSocketServerChannel::Execute : fPollTable i = 1 fd = 8
+Jack: JackSocketServerChannel::Execute : fPollTable i = 2 fd = 9
